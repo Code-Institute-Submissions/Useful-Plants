@@ -1,0 +1,158 @@
+body {
+ font-family: 'Open Sans', sans-serif;
+ color: black;
+   background: #ffffff;
+}
+
+
+h1 {
+    font-family: 'Dosis', sans-serif;
+    display: inline-block;
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+}
+
+h2 {
+    font-family: 'Dosis', sans-serif;
+    text-align: center;
+    color: #000;
+}
+
+/* end of general style */
+
+
+
+/* navbar collapsed, visible only on mobile */
+.navbar {
+    background: green;
+    width: 100vw;
+    height: 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center
+    
+}
+
+/* .navDefault {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #4a4a4f;
+}*/
+
+/* zmien to - hamburger - mobile below */
+.navbarbutton {
+    border: 5px solid black;
+    background-color: #0997d3;
+    background-image: url();
+    width: 50px;
+    height: 30px;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+} 
+
+
+
+.navdesktop {
+    background: pink;
+    background-image: url("https://cdn.shopify.com/s/files/1/0150/6262/products/the-sill_snake-plant-slaurentii_terracotta_4_800x.jpg?v=1537308389");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    text-align: left;
+    width: 350px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    float: left;
+    z-index: -1;
+    display: none;
+}
+
+nav:hover .navdesktop {
+    background-color: #fff;
+    display: block;
+}
+
+/*mobile end*/
+
+
+/* default menu desktop, commented out to test mobile behaviour
+.navdesktop {
+    background: pink;
+    background-image: url("https://cdn.shopify.com/s/files/1/0150/6262/products/the-sill_snake-plant-slaurentii_terracotta_4_800x.jpg?v=1537308389");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    text-align: left;
+    width: 350px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    float: left;
+    z-index: 1;
+}   desktop menu end*/
+
+.navdesktop ul {
+    list-style: none;
+    padding: 0 0 0 0;
+}
+
+.menulink {
+    display: block;
+    position: relative;
+    left: 0;
+    right: 0;
+    line-height: 45px;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.menucategory {
+    color: #045045;
+    line-height: 45px;
+}
+
+
+
+/* content now */
+
+.content {
+    padding-top: 45px;
+    padding-left: 355px;
+    max-width: 100vw;
+}
+
+
+.plantcontainer {
+    min-height: 100px;
+    margin: 10px;
+    padding: 10px;
+    border: solid 1px red;
+    overflow: hidden;
+}
+
+
+img.plantcontainer {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    float: left;
+}
+
+.divider {
+    width: 75px;
+    height: 1px;
+    border: 0;
+    background-color: lightgray;
+    margin: 0 auto;
+}
