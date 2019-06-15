@@ -28,6 +28,28 @@ h2 {
     color: #000;
 }
 
+input {
+    background-image: linear-gradient(-90deg, #b0fe76, #81e979);
+    outline-color: green;
+    width: 50%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+textarea {
+    font-family: 'Open Sans', sans-serif;
+    background-image: linear-gradient(-90deg, #b0fe76, #81e979);
+    overflow: auto;
+    outline-color: green;
+    height: 100px;
+    width: 50%;
+}
+
+label {
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+}
+
 /* end of general style */
 
 /* navbar collapsed, visible only on mobile */
@@ -49,6 +71,7 @@ h2 {
 h1.desktop {
     display: none;
 }
+
 /* .title {
     display: flex;
     align-items: center;
@@ -102,18 +125,33 @@ button.navbarbutton {
     display: none;
 }
 
-li > a {
-    text-decoration: none;
-    color: #000;
-    border-bottom: 1px solid black;
-    
+.overlay {
+    position: absolute;
+    visibility: visible;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(129, 233, 121, 0.65);
+    z-index: -2;
 }
 
-li > a:hover {
+.menulist {
+    z-index: 1;
+}
+
+li>a {
     text-decoration: none;
     color: #000;
-    border-bottom: 1px black dotted;
-    
+    border-bottom: 1px solid #32521A;
+
+}
+
+li>a:hover {
+    text-decoration: none;
+    color: #000;
+    border-bottom: 1px dotted #32521A;
+
 }
 
 /* img > nav:hover .navdesktop {
@@ -186,22 +224,29 @@ button.closebutton:hover .navdesktop {
 
 
 .plantcontainer {
-    min-height: 100px;
+    min-height: 80px;
     margin: 10px;
     padding: 10px;
-    border: solid 1px red;
+    border: solid 1px lightgray;
     overflow: hidden;
 }
 
 
 img.plantcontainer {
-    display: none;
+
+    height: 50px;
+    display: inline-block;
+    border-radius: 50%;
+    float: left;
+    padding: 0 0 0 0;
+    margin-right: 55px;
 }
 
 img.icon {
     border: 0;
-    max-width: 24px;
-    max-height: 24px;
+    width: 24px;
+    height: 24px;
+    margin-top: 5px;
 }
 
 .divider {
@@ -212,24 +257,28 @@ img.icon {
     margin: 0 auto;
 }
 
+.plantcontainer>a {
+    font-weight: bold;
+}
 
-
+.intro {
+    margin-bottom: 15px;
+}
 
 /* media queries */
 
 /* tablet */
 
-@media (min-width:768px) and (max-width: 1400px) {
-    body {
-        background: red;
-    }
+@media (min-width:768px) and (max-width: 1024px) {
+
 
     img.plantcontainer {
-        display: inline-block;
+        display: block;
         border-radius: 50%;
         width: 100px;
         height: 100px;
         float: left;
+
     }
     .plants {
         display: flex;
@@ -242,30 +291,33 @@ img.icon {
         max-width: 200px;
         margin: 10px;
         padding: 10px;
-        border: solid 1px yellow;
+        border: 0px;
         overflow: hidden;
+    }
 
-    }
-    .divider {
-        display: none;
-    }
+
+.divider {
+    display: none;
 }
 
 
+.intro {
+    margin-bottom: 20px;
+}
+
+
+}
 
 /* desktop */
 
 @media (min-width:1024px) {
-    body {
-        background: yellow;
-    }
     /* desktop menu */
-    
     .navbar {
         display: none;
     }
-    
-    .navdesktop, #menu {
+
+    .navdesktop,
+    #menu {
         display: block;
         background: pink;
         background-image: url("https://cdn.shopify.com/s/files/1/0150/6262/products/the-sill_snake-plant-slaurentii_terracotta_4_800x.jpg?v=1537308389");
@@ -285,7 +337,6 @@ img.icon {
 
 
     /* desktop menu end */
-    
     h1.desktop {
         display: block;
         position: relative;
@@ -301,7 +352,7 @@ img.icon {
     }
     .content {
         padding-top: 0px;
-        padding-left: 355px;
+        padding-left: 375px;
     }
 
     img.plantcontainer {
@@ -309,7 +360,6 @@ img.icon {
         border-radius: 50%;
         width: 100px;
         height: 100px;
-        float: left;
     }
     .plants {
         display: flex;
@@ -322,11 +372,15 @@ img.icon {
         max-width: 200px;
         margin: 10px;
         padding: 10px;
-        border: solid 1px yellow;
+        border: 0px;
         overflow: hidden;
 
     }
     .divider {
         display: none;
+    }
+
+    .intro {
+        margin-bottom: 33px;
     }
 }

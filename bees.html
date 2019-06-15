@@ -8,6 +8,19 @@
     <link href="https://fonts.googleapis.com/css?family=Dosis:700|Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/style.css" class="css">
     <title>Document</title>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("menu");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            }
+            else {
+                x.style.display = "none";
+            }
+        }
+    </script>
+    <script src="https://kit.fontawesome.com/14d367b272.js"></script>
+
 </head>
 
 <body>
@@ -16,35 +29,41 @@
             <button class="navbarbutton" onclick="myFunction()"><i class="fas fa-bars"></i></button>
             <h1 class="mobile"> Useful Plants</h1>
         </div>
-        
-        
+
+
 
         <div class="navdesktop" id="menu">
 
+            <div class="menulist">
+                <ul>
+                    <li class="menulink"><a href="">Legend/info</a></li>
+                    <li><span class=menucategory>Plant categories</span></li>
+                    <li class="menulink"><a href="">Air purifiers</a></li>
+                    <li class="menulink"><a href="">For bees</a></li>
+                    <li class="menulink"><a href="">For birds</a></li>
+                    <li class="menulink"><a href="">Safe for children, dogs and cats</a></li>
+                    <li><span class=menucategory>About the website</span></li>
+                    <li class="menulink"><a href="">Acknowledgements</a></li>
+                    <li class="menulink"><a href="">Contact</a></li>
 
-            <ul>
-                <li class="menulink"><a href="">Menu item 1</a></li>
-                <li><span class=menucategory>Category</span></li>
-                <li class="menulink"><a href="">Menu item 1</a></li>
-                <li class="menulink"><a href="">Menu item 1</a></li>
-                <li class="menulink"><a href="">Menu item 1</a></li>
-                <li class="menulink"><a href="">Menu item 1</a></li>
-                <li class="menulink"><a href="">Menu item 1</a></li>
-                <li class="menulink"><a href="">Menu item 1</a></li>
-                <li class="menulink"><a href="">Menu item 1</a></li>
-                <li class="menulink"><a href="">Menu item 1</a></li>
-            </ul>
+                </ul>
+            </div>
+
+            <div class="overlay"></div>
         </div>
     </nav>
 
     <content>
         <div class="content">
-            
+
             <h1 class="desktop"> Useful Plants</h1>
             <div class="intro">
                 Intro text Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut
                 aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent
                 luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+                
+                    
+            
             </div>
 
             <div class="plants">
@@ -54,9 +73,9 @@
             Something in latin
                 </a>
                     <BR>
-                    <img src="" alt="ICON ONE" class="icon">
-                    <img src="" alt="ICON two" class="icon">
-                    <img src="" alt="ICON THREE" class="icon">
+                    <img src="imgs/icons/sunshade.png" alt="ICON ONE" class="icon">
+                    <img src="imgs/icons/tempcold.png" alt="ICON two" class="icon">
+                    <img src="imgs/icons/waterhumid.png" alt="ICON THREE" class="icon">
                 </div>
 
                 <div class="divider"></div>
@@ -110,18 +129,6 @@
         </div>
     </content>
 
-    <script>
-        function myFunction() {
-            var x = document.getElementById("menu");
-            if (x.style.display === "none") {
-                x.style.display = "block";
-            }
-            else {
-                x.style.display = "none";
-            }
-        }
-    </script>
-    <script src="https://kit.fontawesome.com/14d367b272.js"></script>
 
 
 
