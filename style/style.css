@@ -32,28 +32,6 @@ h2 {
     font-size: 2em;
 }
 
-input {
-    background-image: linear-gradient(-90deg, #b0fe76, #81e979);
-    outline-color: green;
-    width: 50%;
-    font-family: 'Open Sans', sans-serif;
-}
-
-textarea {
-    font-family: 'Open Sans', sans-serif;
-    background-image: linear-gradient(-90deg, #b0fe76, #81e979);
-    overflow: auto;
-    outline-color: green;
-    height: 100px;
-    width: 50%;
-}
-
-label {
-    margin-right: 10px;
-    display: flex;
-    align-items: center;
-}
-
 /* end of general style */
 
 /* navbar collapsed, visible only on mobile */
@@ -73,7 +51,7 @@ label {
 }
 
 h1.desktop {
-    display: none;
+    visibility: hidden;
 }
 
 
@@ -88,7 +66,7 @@ button.navbarbutton {
 #menu {
     background: lightgray;
     background-image: url("mobile-menu-fern.jpg");
-background-size: cover;
+    background-size: cover;
     background-position: bottom right;
     background-repeat: no-repeat;
     text-align: left;
@@ -119,55 +97,22 @@ background-size: cover;
     z-index: 1;
 }
 
-li>a {
+li>a, .content a, .seemore {
     text-decoration: none;
     color: #000;
     border-bottom: 1px solid #32521A;
 
 }
 
-li>a:hover {
+li>a:hover, .content a:hover, .seemore:hover {
     text-decoration: none;
     color: #000;
     border-bottom: 1px dotted #32521A;
 
 }
 
-/* img > nav:hover .navdesktop {
-    background-color: #fff;
-    display: block;
-}
 
-button.closebutton {
-    position: relative;
-    top: 20px;
-    left: 5px;
-}
-
-button.closebutton:hover .navdesktop {
-    background-color: #fff;
-    display: none;
-}*/
-
-/* add a collapsing button */
-
-/*mobile end*/
-
-/* default menu desktop, commented out to test mobile behaviour
-.navdesktop {
-    background: pink;
-    background-image: url("https://cdn.shopify.com/s/files/1/0150/6262/products/the-sill_snake-plant-slaurentii_terracotta_4_800x.jpg?v=1537308389");
-    background-position: bottom;
-    background-repeat: no-repeat;
-    text-align: left;
-    width: 350px;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    float: left;
-    z-index: 1;
-}   desktop menu end*/
+/*mobile menu end*/
 
 .navdesktop ul {
     list-style: none;
@@ -198,7 +143,7 @@ button.closebutton:hover .navdesktop {
 
 .content {
     max-width: 100%;
-    position: absolute;
+    /*position: absolute;*/
     top: 15px;
     padding: 5px 5px;
 }
@@ -221,6 +166,23 @@ img.plantcontainer {
     float: left;
     padding: 0 0 0 0;
     margin-right: 55px;
+}
+
+.plantcontainer>a {
+    font-family: 'Dosis', sans-serif;
+    font-size: 1.2em;
+    text-decoration: none;
+    color: #045045;
+    border-bottom: 1px solid #045045;
+}
+
+.plantcontainer>a:active {
+    color: #045045;
+}
+
+.plantcontainer>a:hover {
+    color: #045045;
+    border-bottom: 1px dotted #045045;
 }
 
 img.icon {
@@ -247,6 +209,58 @@ img.icon {
     margin-top: 15px;
 }
 
+.explain {
+    padding-left: 10%;
+}
+
+/* contact style */ 
+
+input {
+    background-image: linear-gradient(-90deg, #b0fe76, #81e979);
+    outline-color: green;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+textarea {
+    font-family: 'Open Sans', sans-serif;
+    background-image: linear-gradient(-90deg, #b0fe76, #81e979);
+    overflow: auto;
+    outline-color: green;
+    width: 100%;
+}
+
+label {
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.contactform {
+    background-image: linear-gradient(-90deg, #b0fe76, #81e979);
+    border: 0;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+}
+
+
+.sociallinks {
+    margin-top: 33px;
+}
+
+.sociallinks a, .sociallinks a:hover {
+    border-bottom: 0px;
+}
+
+img.social {
+    background-image: linear-gradient(-90deg, #b0fe76, #81e979);
+    width: 50px;
+    height: 50px;
+}
+
+
+
 /* media queries */
 
 /* tablet */
@@ -254,11 +268,12 @@ img.icon {
 @media (min-width:768px) and (max-width: 1280px) {
 
 
+
     img.plantcontainer {
         display: block;
         border-radius: 50%;
-        width: 100px;
-        height: 100px;
+        width: 150px;
+        height: 150px;
         float: left;
 
     }
@@ -278,14 +293,14 @@ img.icon {
     }
 
 
-.divider {
-    display: none;
-}
+    .divider {
+        display: none;
+    }
 
 
-.intro {
-    margin-bottom: 20px;
-}
+    .intro {
+        margin-bottom: 20px;
+    }
 
 
 }
@@ -322,13 +337,14 @@ img.icon {
     /* desktop menu end */
     h1.desktop {
         display: block;
+        visibility: visible;
         position: relative;
         top: 0px;
         text-align: center;
         margin: 0 auto;
         margin-bottom: 25px;
         font-size: 33px;
-        color: #000;
+        color: #fff;
     }
     h1.mobile {
         display: none;
@@ -342,8 +358,8 @@ img.icon {
     img.plantcontainer {
         display: inline-block;
         border-radius: 50%;
-        width: 100px;
-        height: 100px;
+        width: 150px;
+        height: 150px;
     }
     .plants {
         display: flex;
@@ -367,4 +383,21 @@ img.icon {
     .intro {
         margin-bottom: 33px;
     }
+
+
+
+    input {
+
+        width: 33%;
+
+    }
+
+    textarea {
+        width: 33%;
+    }
+
+    .contactform {
+        width: 33%;
+    }
+
 }
