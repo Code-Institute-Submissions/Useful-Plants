@@ -8,11 +8,14 @@ tertiary green (underline): #32521A
 
 */
 
+/* general style */
+
 body {
     font-family: 'Open Sans', sans-serif;
     color: black;
     background: #ffffff;
     font-size: 1em;
+    margin: 0px;
 }
 
 
@@ -32,9 +35,9 @@ h2 {
     font-size: 2em;
 }
 
-/* end of general style */
+/* general style ends */
 
-/* navbar collapsed, visible only on mobile */
+/* mobile menu */
 
 .navbar {
     background: #317B22;
@@ -95,24 +98,34 @@ button.navbarbutton {
 
 .menulist {
     z-index: 1;
+    padding-top: 15px;
 }
 
-li>a, .content a, .seemore {
+/* below style for menu links, links in the content different than these in div.plantcontainer and "see more" link */
+
+li>a,
+.content a,
+.seemore {
     text-decoration: none;
     color: #000;
     border-bottom: 1px solid #32521A;
 
 }
 
-li>a:hover, .content a:hover, .seemore:hover {
+li>a:hover,
+.content a:hover,
+.seemore:hover {
     text-decoration: none;
     color: #000;
     border-bottom: 1px dotted #32521A;
 
 }
 
+/* end of link styles */
 
-/*mobile menu end*/
+/* mobile menu ends */
+
+/* menu list style */
 
 .navdesktop ul {
     list-style: none;
@@ -125,8 +138,14 @@ li>a:hover, .content a:hover, .seemore:hover {
     left: 0px;
     right: 0;
     line-height: 45px;
+    margin-bottom: 20px;
     text-align: left;
     padding-left: 30px;
+}
+
+.homemenulink {
+    padding-left: 15px;
+    margin-bottom: 20px;
 }
 
 .menucategory {
@@ -137,9 +156,9 @@ li>a:hover, .content a:hover, .seemore:hover {
     font-family: 'Dosis', sans-serif;
 }
 
+/* menu list style ends */
 
-
-/* content now */
+/* content style */
 
 .content {
     max-width: 100%;
@@ -159,13 +178,13 @@ li>a:hover, .content a:hover, .seemore:hover {
 
 
 img.plantcontainer {
-
     height: 50px;
     display: inline-block;
     border-radius: 50%;
-    float: left;
+    /*float: left;*/
     padding: 0 0 0 0;
     margin-right: 55px;
+    border: 0px;
 }
 
 .plantcontainer>a {
@@ -173,16 +192,13 @@ img.plantcontainer {
     font-size: 1.2em;
     text-decoration: none;
     color: #045045;
-    border-bottom: 1px solid #045045;
+    border-bottom: 0px solid #045045;
 }
 
+.plantcontainer>a:hover,
 .plantcontainer>a:active {
-    color: #045045;
-}
-
-.plantcontainer>a:hover {
-    color: #045045;
-    border-bottom: 1px dotted #045045;
+    color: #317B22;
+    border-bottom: 0px;
 }
 
 img.icon {
@@ -213,7 +229,9 @@ img.icon {
     padding-left: 10%;
 }
 
-/* contact style */ 
+/* content style ends */
+
+/* contact page */
 
 input {
     background-image: linear-gradient(-90deg, #b0fe76, #81e979);
@@ -231,14 +249,13 @@ textarea {
 }
 
 label {
-    margin-right: 10px;
-    display: flex;
-    align-items: center;
+    display: block;
+    text-align: center;
 }
 
+/* button style */ 
 .contactform {
     background-image: linear-gradient(-90deg, #b0fe76, #81e979);
-    border: 0;
     width: 100%;
     font-family: 'Open Sans', sans-serif;
     font-size: 1em;
@@ -249,7 +266,8 @@ label {
     margin-top: 33px;
 }
 
-.sociallinks a, .sociallinks a:hover {
+.sociallinks a,
+.sociallinks a:hover {
     border-bottom: 0px;
 }
 
@@ -259,9 +277,9 @@ img.social {
     height: 50px;
 }
 
+/* contact page ends */
 
-
-/* media queries */
+/* ------------------------ MEDIA QUERIES ------------------------ */
 
 /* tablet */
 
@@ -308,6 +326,7 @@ img.social {
 /* desktop */
 
 @media (min-width:1280px) {
+
     /* desktop menu */
     .navbar {
         display: none;
@@ -316,7 +335,7 @@ img.social {
     .navdesktop,
     #menu {
         display: block;
-        background: pink;
+        background: white;
         background-image: url("menu-spider-plant.png");
         background-position: bottom right;
         background-size: cover;
@@ -332,9 +351,7 @@ img.social {
 
     }
 
-
-
-    /* desktop menu end */
+    /* desktop menu ends */
     h1.desktop {
         display: block;
         visibility: visible;
@@ -343,16 +360,36 @@ img.social {
         text-align: center;
         margin: 0 auto;
         margin-bottom: 25px;
+        padding-bottom: 15px;
         font-size: 33px;
         color: #fff;
     }
+
     h1.mobile {
         display: none;
     }
+
+    /* content position */
     .content {
         padding-top: 0px;
-        padding-left: 370px;
-        padding-right: 20px;
+        margin-left: 340px;
+        padding-right: 0px;
+        padding-left: 10px;
+        /*justify-content: center;*/
+    }
+
+    .intro,
+    h2 {
+        padding: 0px 25px;
+    }
+
+
+    .plants {
+        padding: 0px 25px;
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        align-items: stretch;
     }
 
     img.plantcontainer {
@@ -361,16 +398,11 @@ img.social {
         width: 150px;
         height: 150px;
     }
-    .plants {
-        display: flex;
-        justify-content: flex-start;
-        flex-wrap: wrap;
-        align-items: stretch;
-    }
+
     div.plantcontainer {
         min-height: 100px;
         max-width: 200px;
-        margin: 10px;
+        margin: 25px 10px 30px 10px;
         padding: 10px;
         border: 0px;
         overflow: hidden;
@@ -384,18 +416,18 @@ img.social {
         margin-bottom: 33px;
     }
 
-
-
-    input {
-
-        width: 33%;
-
+    /* contact page style */
+    .contact {
+        margin-left: 30%;
+        margin-right: 30%;
+        text-align: center;
     }
 
-    textarea {
-        width: 33%;
+    input, textarea {
+        width: 80%;
     }
 
+    /* button style */ 
     .contactform {
         width: 33%;
     }
