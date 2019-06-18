@@ -37,28 +37,28 @@
 
         /* Default State */
 
-        .row {
+        .creators {
             display: none;
         }
 
         /* Toggled State */
 
-        input[type=checkbox]:checked~.row {
+        input[type=checkbox]:checked~.creators {
             display: block;
         }
 
 
         @media (min-width: 768px) {
-            input[type=checkbox]:checked~.row {
+            input[type=checkbox]:checked~.creators {
                 display: flex;
                 justify-content: center;
             }
 
-            .column {
+            .wikipedia, .unsplash {
                 flex: 50%;
-                line-height: 30px;
+                line-height: 35px;
             }
-
+            
         }
     </style>
 </head>
@@ -104,7 +104,7 @@
 
                 <h2>Knowledge sources</h2>
 
-                <p>The information for this website is a mix of personal experience and knowledge accessible in internet. <br> I need to mention:<br>
+                <p>The information for this website is a mix of personal experience and knowledge accessible on the internet. <br> I need to mention:<br>
                     <a href="https://www.thespruce.com/"><i class="fas fa-leaf"></i> The Spruce</a><br>
                     <a href="https://www.gardenersworld.com/"><i class="fas fa-leaf"></i> Gardeners' World</a><br> and <a href="https://beefriendly.ca/"><i class="fas fa-leaf"></i> Bee Friendly</a><br> as my main internet sources.
                 </p>
@@ -117,15 +117,15 @@
 
                     <input type="checkbox" id="check_id"><br><label for="check_id" class="seemore">See more for the full list of authors <i class="fas fa-long-arrow-alt-down"></i></label>
 
-                    <div class="row">
-                        <div class="column">
+                    <div class="creators">
+                        <div class="wikipedia">
                             <h3>Wikipedia creators</h3>
 
                             Blackberry - By <a href="//commons.wikimedia.org/wiki/User:Caballero1967" title="User:Caballero1967">Caballero1967</a> - <span class="int-own-work" lang="en">Own work</span>, <a href="https://creativecommons.org/licenses/by-sa/4.0"
                                 title="Creative Commons Attribution-Share Alike 4.0">CC BY-SA 4.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=46792932">Link</a>
                             
                             <br> Calendula - By <a rel="nofollow" class="external text" href="https://www.flickr.com/people/zachievenor">Zachi Evenor</a> - <a href="//commons.wikimedia.org/wiki/Flickr" class="mw-redirect" title="Flickr">Flickr</a>:
-                            <a rel="nofollow" class="external free" href="https://www.flickr.com/photos/zachievenor/23958912766/">https://www.flickr.com/photos/zachievenor/23958912766/</a>, <a href="https://creativecommons.org/licenses/by/3.0" title="Creative Commons Attribution 3.0">CC BY 3.0</a>,
+                            <a rel="nofollow" class="external free" href="https://www.flickr.com/photos/zachievenor/23958912766/">zachievenor</a>, <a href="https://creativecommons.org/licenses/by/3.0" title="Creative Commons Attribution 3.0">CC BY 3.0</a>,
                             <a href="https://commons.wikimedia.org/w/index.php?curid=45892681">Link</a>
                             
                             <br> Dog rose - By Roberta F., <a href="https://creativecommons.org/licenses/by-sa/3.0" title="Creative Commons Attribution-Share Alike 3.0">CC BY-SA 3.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=4123691">Link</a>
@@ -175,7 +175,7 @@
 
 
                         </div>
-                        <div class="column">
+                        <div class="unsplash">
                             <h3>Unsplash creators</h3>
 
                             Aster - <a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px"
