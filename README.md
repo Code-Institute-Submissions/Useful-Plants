@@ -91,15 +91,4 @@ All text within the website was written by me. Adding specific plant information
 All photos used for this project were taken from [Wikipedia](https://en.wikipedia.org) and [Unsplash](http://unsplash.com). Full list of authors at [acknowledgements page](https://ardhanari.github.io/Useful-Plants/acknowledgements.html)
 
 
-### Acknowledgements
-
-
-////////The scrollSpy delay JavaScript function was found through this tutorial [here](https://www.abeautifulsite.net/smoothly-scroll-to-an-element-without-a-jquery-plugin-2).
-
-/////////////////////////
-
-
-
-
-
 **This is for educational use.** 
