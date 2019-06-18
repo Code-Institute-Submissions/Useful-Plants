@@ -35,6 +35,11 @@ h2 {
     font-size: 2em;
 }
 
+p {
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+}
+
 /* general style ends */
 
 /* mobile menu */
@@ -179,9 +184,9 @@ li>a:hover,
 
 img.plantcontainer {
     height: 50px;
-    display: inline-block;
+    display: block;
     border-radius: 50%;
-    /*float: left;*/
+    float: left;
     padding: 0 0 0 0;
     margin-right: 55px;
     border: 0px;
@@ -189,7 +194,7 @@ img.plantcontainer {
 
 .plantcontainer>a {
     font-family: 'Dosis', sans-serif;
-    font-size: 1.2em;
+    font-size: 20px;
     text-decoration: none;
     color: #045045;
     border-bottom: 0px solid #045045;
@@ -223,6 +228,7 @@ img.icon {
 .intro {
     margin-bottom: 20px;
     margin-top: 15px;
+    font-size: 20px;
 }
 
 .explain {
@@ -253,7 +259,8 @@ label {
     text-align: center;
 }
 
-/* button style */ 
+/* button style */
+
 .contactform {
     background-image: linear-gradient(-90deg, #b0fe76, #81e979);
     width: 100%;
@@ -360,8 +367,9 @@ img.social {
         text-align: center;
         margin: 0 auto;
         margin-bottom: 25px;
-        padding-bottom: 15px;
-        font-size: 33px;
+        padding-bottom: 30px;
+        padding-top: 30px;
+        font-size: 2.5em;
         color: #fff;
     }
 
@@ -423,11 +431,12 @@ img.social {
         text-align: center;
     }
 
-    input, textarea {
+    input,
+    textarea {
         width: 80%;
     }
 
-    /* button style */ 
+    /* button style */
     .contactform {
         width: 33%;
     }
