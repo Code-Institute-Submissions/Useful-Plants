@@ -1,25 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Dosis:700|Open+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style/style.css" class="css">
-    <title>Plants safe for children and pets - Useful Plants</title>
-    <script>
-        function myFunction() {
-            var x = document.getElementById("menu");
-            if (x.style.display === "none") {
-                x.style.display = "block";
-            }
-            else {
-                x.style.display = "none";
-            }
+<!--- menu button -------->
+<script>
+    function myFunction() {
+        var x = document.getElementById("menu");
+        if (x.style.display === "none") {
+            x.style.display = "block";
         }
-    </script>
-    <script src="https://kit.fontawesome.com/14d367b272.js"></script>
+        else {
+            x.style.display = "none";
+        }
+    }
+</script>
+<!-------font awesome script ------->
+<script src="https://kit.fontawesome.com/14d367b272.js"></script>
 
 </head>
 
@@ -31,6 +23,7 @@
         </div>
 
 
+        <!--- main navigation ---->
 
         <div class="navdesktop" id="menu">
 
@@ -49,6 +42,7 @@
                 </ul>
             </div>
 
+            <!--- green colour menu overlay ---->
             <div class="overlay"></div>
         </div>
     </nav>
@@ -57,6 +51,7 @@
         <div class="content">
 
             <h1 class="desktop"> Useful Plants</h1>
+            <!------- main content ---------->
             <div class="intro">
                 <p>Plants on this page are safe for dogs, cats and children when touched, smelled or ingested. They are non toxic but still look good and are easy to take care of.<br> Please remember, these plants can still be harmful for other household
                     pets.
@@ -72,6 +67,7 @@
 
             <div class="plants">
 
+                <!---- single plant item is wrapped in .plantcontainer class ---->
 
                 <div class=plantcontainer>
                     <a href="https://en.wikipedia.org/wiki/Crassula_ovata" target="_blank">
@@ -83,6 +79,7 @@
                     <img src="images/icons/waterdry.png" alt="water: spare" title="prefers dry conditions" class="icon">
                 </div>
 
+                <!---- divider visible on mobile ------->
                 <div class="divider"></div>
 
 
@@ -228,3 +225,4 @@
 </body>
 
 </html>
+    
