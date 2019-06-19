@@ -395,6 +395,7 @@ img.social {
         border-radius: 50%;
         width: 150px;
         height: 150px;
+        float: none;
     }
 
     div.plantcontainer {
