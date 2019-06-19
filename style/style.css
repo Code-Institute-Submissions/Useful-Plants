@@ -1,13 +1,3 @@
-/* colours used: 
-
-font: #000000
-background: #ffffff
-primary green (mobile menu): #317B22
-secondary green: #045045
-tertiary green (underline): #32521A
-
-*/
-
 /* general style */
 
 body {
@@ -106,7 +96,7 @@ button.navbarbutton {
     padding-top: 15px;
 }
 
-/* below style for menu links, links in the content different than these in div.plantcontainer and "see more" link */
+/* below style for menu links and links in the content different than these in div.plantcontainer */
 
 li>a,
 .content a,
@@ -169,7 +159,7 @@ li>a:hover,
     max-width: 100%;
     /*position: absolute;*/
     top: 15px;
-    padding: 5px 5px;
+    padding: 10px 15px;
 }
 
 
@@ -360,6 +350,7 @@ img.social {
 
     /* desktop menu ends */
     h1.desktop {
+        background-color: #5ab946;
         display: block;
         visibility: visible;
         position: relative;
@@ -383,7 +374,6 @@ img.social {
         margin-left: 340px;
         padding-right: 0px;
         padding-left: 10px;
-        /*justify-content: center;*/
     }
 
     .intro,
